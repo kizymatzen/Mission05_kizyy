@@ -1,0 +1,35 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<!--form to input scores-->
+<form>
+    <h3 class="pinkfont">Grade Calculator</h3>
+    <div style="display: flex;">
+        <div style="width: 50%;">
+            <label for="" style="margin-bottom:8px;"></label><br />
+            <label for="assignments" style="margin-bottom:8px;">Assignments:</label><br />
+            <label for="groupProject" style="margin-bottom:8px;">Group Project:</label><br />
+            <label for="quizzes" style="margin-bottom:8px;">Quizzes:</label><br />
+            <label for="midtermExam" style="margin-bottom:8px;">Midterm Exam:</label><br />
+            <label for="finalExam" style="margin-bottom:8px;">Final Exams:</label><br />
+            <label for="intex" style="margin-bottom:8px;">Intex:</label><br />
+        </div>
+        <div style="width: 25%;">
+            <label style="font-size: smaller;">Score</label><br />
+            <input type="text" id="assignments" name="assignments" style="width: 90%;" /><br />
+            <input type="text" id="groupProject" name="groupProject" style="width: 90%;" /><br />
+            <input type="text" id="quizzes" name="quizzes" style="width: 90%;" /><br />
+            <input type="text" id="midtermExam" name="midtermExam" style="width: 90%;" /><br />
+            <input type="text" id="finalExam" name="finalExam" style="width: 90%;" /><br />
+            <input type="text" id="intex" name="intex" style="width: 90%;" /><br />
+
+        </div>
+    </div>
+    <br />
+    <input type="button" id="btnsubm" value="Calculate Grade" />
+    <br /><br />
+    <span id="result"></span>
+</form>
