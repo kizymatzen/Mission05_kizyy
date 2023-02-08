@@ -1,7 +1,6 @@
 ﻿$(document).ready(function () {
     $("#btnsubm").click(function () {
 
-   
         //Get values from html form & assign to variables
         var assignments = parseFloat($("#assignments").val()) || 0;
         var groupProject = parseFloat($("#groupProject").val()) || 0;
@@ -23,7 +22,6 @@
 
         //Calculate Final Percentage
         var finalPercentage = (assignments * 0.5) + (groupProject * 0.1) + (quizzes * 0.1) + (midtermExam * 0.1) + (finalExam * 0.1) + (intex * 0.1);
-
 
         //Final Grade Letter Condition
         var letterGrade;
@@ -55,7 +53,5 @@
 
         //Display Final Percentage & letter grade
         $('#result').html('Final Percentage: ' + finalPercentage + '<br>Letter Grade: ' + letterGrade);
-
-
     });
 });
